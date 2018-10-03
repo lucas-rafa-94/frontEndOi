@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img class="profile-img" src="https://upload.wikimedia.org/wikipedia/pt/d/d7/B3_logo.png" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/home']">Perfil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home/upload']">Upload</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home/download']">Download</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a  class="btn btn-outline-danger"  [routerLink]="['/']" (click)="cleanToken()">
+        <span class="glyphicon glyphicon-log-out"></span> Log out
+      </a>
+    </form>
+  </div>
+</nav>
